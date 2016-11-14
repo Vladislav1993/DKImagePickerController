@@ -8,7 +8,6 @@
 
 import UIKit
 import Photos
-import PureLayout
 
 @objc
 public protocol DKImagePickerControllerUIDelegate {
@@ -258,7 +257,7 @@ public class DKImagePickerController : UINavigationController {
     func prepareNav()
     {
         self.navigationBar.barTintColor = UIColor.whiteColor()
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(33,33,33)]
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(red: 33.0/255.0, green: 33.0/255.0, blue: 33.0/255.0, alpha: 1.0)]
     }
   	
 	private var hasInitialized = false

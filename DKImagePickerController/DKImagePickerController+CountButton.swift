@@ -13,8 +13,8 @@ extension DKImagePickerController
     func createBottonCount() -> UIButton
     {
         let heightButton = CGFloat(44)
-        let width = UIScreen.width()
-        let button = UIButton(frame: CGRectMake(0, UIScreen.height() - heightButton, width, heightButton))
+        let width = CGRectGetWidth(mainScreen().bounds)
+        let button = UIButton(frame: CGRectMake(0, CGRectGetHeight(mainScreen().bounds) - heightButton, width, heightButton))
         button.setTitleColor(.customBlueButton(), forState: .Normal)
         button.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 14)
         button.backgroundColor = .whiteColor()

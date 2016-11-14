@@ -470,7 +470,7 @@ internal class DKAssetGroupDetailVC: UIViewController, UICollectionViewDelegate,
                         layout collectionViewLayout: UICollectionViewLayout,
                                sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let countItemRow = CGFloat(3)
-        let width = (UIScreen.width() - spaceItem * (countItemRow + 1))/countItemRow
+        let width = (CGRectGetWidth(mainScreen().bounds) - spaceItem * (countItemRow + 1))/countItemRow
         return CGSizeMake(width, width)
         
     }

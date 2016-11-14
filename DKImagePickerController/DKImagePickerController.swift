@@ -258,7 +258,7 @@ public class DKImagePickerController : UINavigationController {
     func prepareNav()
     {
         self.navigationBar.barTintColor = UIColor.whiteColor()
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.custom33()]
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(33,33,33)]
     }
   	
 	private var hasInitialized = false
